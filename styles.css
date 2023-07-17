@@ -1,0 +1,170 @@
+body {
+    background-color: #1374ea;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;  /* This makes sure the body takes up at least the full height of the viewport */
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    display: flex;
+    align-items: stretch;
+    width: 80%;  /* Adjust this value to fit your needs */
+    padding: 20px;
+    box-sizing: border-box;
+    height: 70vh;
+}
+
+#facebook {
+    background-color: rgb(0, 98, 255);
+    color: white;
+    width: 45%;  /* Adjust this value to fit your needs */
+    padding: 20px;
+    border-radius: 5px;
+    
+}
+
+#facebook img {
+    width: 100px;  /* Adjust this value to fit your needs */
+    height: 100px;
+    border-radius: 50%;
+}
+
+#form {
+    width: 45%;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;  /* Make the form children stack vertically */
+    align-items: center;  /* Center align the form children */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* This adds a subtle shadow effect */
+}
+
+#form input {
+    width: 100%;  /* Set width to 80% of the form width */
+    border: none;  /* Remove existing border */
+    border-bottom: 2px solid skyblue;  /* Add bottom border */
+    padding: 10px;  /* Add some padding */
+    margin-bottom: 10px;  /* Add some space between inputs */
+    outline: none;  /* Remove browser-default outline */
+}
+
+#form input::placeholder {
+    text-align: center; /* Center align the placeholder text */
+}
+
+#form form {
+    width: 50%;
+    padding: 3%;
+}
+
+#text {
+    color: rgb(102, 156, 243);
+    font-size: 20px;
+    font-style: normal;
+    padding-bottom: 3%;
+}
+
+
+#facebook, #form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#facebook button, #form button {
+    margin-top: 10px; /* Creates a little space between buttons and the other elements */
+}
+
+#continue {
+    background-color: rgb(0, 98, 255);
+    color: white;
+    border: 2px solid white;
+    display: flex; /* changed from inline-flex to flex */
+    align-items: center;
+    justify-content: center; /* added to center text */
+    padding: 10px 30px; /* increased padding for wider button */
+    border-radius: 25px; /* increased for more rounded edges */
+    width: 60%; /* control the width of the button */
+    height: 50px; /* control the height of the button */
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+#continue2 {
+    background-color: white;
+    color: rgb(102, 156, 243);
+    border: 2px solid rgb(96, 138, 207);
+    display: flex; /* changed from inline-flex to flex */
+    align-items: center;
+    justify-content: center; /* added to center text */
+    padding: 10px 30px; /* increased padding for wider button */
+    border-radius: 25px; /* increased for more rounded edges */
+    width: 51%; /* control the width of the button */
+    height: 50px; /* control the height of the button */
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    margin-left: 4%;
+    margin-bottom: 20px;
+}
+
+#continue:after {
+    content: "➡️";
+    position: absolute;
+    right: -10px;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+
+#continue:hover:after {
+    right: 10px;
+}
+
+
+
+#welcome {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#form-btn {
+    background-color: rgb(0, 98, 255);
+    color: white;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 30px;
+    border-radius: 25px;
+    width:50%; /* The same width as #continue */
+    height: 50px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    margin-left: 4%;
+    margin-bottom: 20px;
+}
+
+#form-btn:after {
+    content: "➡️";
+    position: absolute;
+    right: -10px;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+
+#form-btn:hover:after {
+    right: 10px;
+}
+
